@@ -2,7 +2,7 @@
 
 好用的 AI，比你知道的更多。
 
-网站地址：**[https://UESTC1010.github.io/AIList/](https://UESTC1010.github.io/AIList/)**
+网站正式地址：**[https://tanxinshe.cn/](https://tanxinshe.cn/)**
 
 AI 工具导航与精选介绍，包含 6 个分类、44 个工具介绍页和 4 篇文章。支持搜索、分类筛选、浏览器收藏和手机访问。
 
@@ -20,3 +20,9 @@ AI 工具导航与精选介绍，包含 6 个分类、44 个工具介绍页和 4
 5. 用新压缩包替换仓库中的同名文件，提交后自动发布。
 
 无需安装 npm 包或配置 API 密钥。收藏保存在访问者自己的浏览器，不上传到本站。工具介绍基于官方资料，站内提供来源链接。
+
+## 自定义域名
+
+在仓库 **Settings → Pages → Custom domain** 中设置 `tanxinshe.cn`，在西部数码将根域名解析到 GitHub Pages，并将 `www` 的 CNAME 指向 `uestc1010.github.io`。DNS 检查通过且证书可用后，启用 **Enforce HTTPS**。
+
+网站源文件 `ai-tanxinshe/content/site.json` 的 `baseUrl` 为 `https://tanxinshe.cn/`，页面 canonical 链接、站点地图和 robots.txt 使用此正式地址。当前通过 GitHub Actions 部署，无需在压缩包或仓库中添加 `CNAME` 文件。具体 DNS 记录见 [GitHub 官方自定义域名说明](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。
